@@ -7,8 +7,8 @@ export const ChairsPreview = ({chair})=> {
 
     // render() {
         return (
-            <div>
-            {JSON.stringify(chair.price)}
+            <div className="chairsPreview flex center">
+            {JSON.stringify(chair.pos.chairNum)}
             </div>
         )
     // }

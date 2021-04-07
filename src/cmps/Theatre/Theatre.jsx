@@ -32,7 +32,7 @@ export class Theatre extends Component {
 
     render() {
         return (
-            <div>
+            <div className="theatre flex column">
                 <div className="screen"></div>
 
                 <ChairsList theatre={this.state.theatre} rowsCount={this.state.rows}/>
