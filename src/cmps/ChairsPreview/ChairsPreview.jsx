@@ -3,13 +3,13 @@ import { Component } from 'react'
 
 import './ChairsPreview.scss'
 
-export class ChairsPreview extends Component {
+export const ChairsPreview = ({chair})=> {
 
-    render() {
+    // render() {
         return (
             <div>
-            
+            {JSON.stringify(chair.price)}
             </div>
         )
-    }
+    // }
 }

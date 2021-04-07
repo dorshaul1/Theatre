@@ -46,7 +46,7 @@ const gTheatre = [
         "status": "available",
         "pos": {
             "line": 3,
-            "chairNum": 5
+            "chairNum": 2
         },
         "price": 35
 
