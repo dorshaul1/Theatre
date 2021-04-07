@@ -1,0 +1,1 @@
+export { ChairsPreview } from './ChairsPreview'

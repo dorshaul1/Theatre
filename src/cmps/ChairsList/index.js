@@ -1,0 +1,1 @@
+export { ChairsList } from './ChairsList'

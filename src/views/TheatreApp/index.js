@@ -1,0 +1,1 @@
+export { TheatreApp } from './TheatreApp'
