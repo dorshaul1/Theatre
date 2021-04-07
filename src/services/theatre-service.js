@@ -122,7 +122,7 @@ function createTheatre (rows,columns,middleSection,generalPrice){
     const passColumn=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
     const theatre=[]
     for (var i=0 ;i<=rows;i++){
-        for(var j=0;j<=columns;j++){
+        for (var j=0;j<=columns;j++){
             const chair=createChair(i,j,generalPrice,passColumn)
             console.log(chair)
             theatre.push(chair)
