@@ -2,7 +2,7 @@
 import { Component } from 'react'
 import { ReservationSummary } from '../../cmps/ReservationSummary/ReservationSummary'
 import { Theatre } from '../../cmps/Theatre'
-import {theatreService} from '../../services/theatre-service'
+
 
 import './TheatreApp.scss'
 
@@ -12,10 +12,7 @@ export class TheatreApp extends Component {
     //     theatre
     // }
 
-    componentDidMount(){
 
-    // theatreService.createTheatre(10,25,18,35)
-    }
 
     render() {
         return (

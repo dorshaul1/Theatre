@@ -2,7 +2,7 @@
 // import {storageService} from '.async-storage-service.js'
 
 export const theatreService={
-    createTheater,
+    createTheatre,
 getTheatre
 }
 
@@ -117,23 +117,23 @@ function getTheatre() {
     return gTheatre
 }
 
-function createTheater (rows,columns,middleSection,generalPrice){
+function createTheatre (rows,columns,middleSection,generalPrice){
     const middleSit=parseInt(columns.length/2)
     const passColumn=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
     const theatre=[]
-    for (var i=0 ;i<=rows.length;i++){
-        for(var j=0;j<=columns.length;j++){
+    for (var i=0 ;i<=rows;i++){
+        for(var j=0;j<=columns;j++){
             const chair=createChair(i,j,generalPrice,passColumn)
+            console.log(chair)
             theatre.push(chair)
         }
     }
-    gTheatre=theatre
     // storageService.save('THEATRE',theatre)
     return theatre
 }
 
 function createChair(line,chairNum,price,passColumn){
-    if (chairNum===passColumn[0]||chairNum===passColumn[1]){ 
+    if (chairNum!==passColumn[0] && chairNum!==passColumn[1]){ 
         return  {
             _id: _makeId(),
             isChair: true,

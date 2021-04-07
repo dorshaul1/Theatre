@@ -12,13 +12,14 @@ export class Theatre extends Component {
         rows: null
     }
 
-    componentDidMount() {
-        const theatreToShow = theatreService.getTheatre()
-        // console.log('theatreToShow:', theatreToShow)
+    asynccomponentDidMount() {
+        
+        var theatreToShow = theatreService.createTheatre(10,25,18,35)
+        console.log('theatreToShow:', theatreToShow)
         this.setState({ theatre: theatreToShow }, ()=>{
             this.rowCount()
         })
-        // console.log('theatre:', theatre)
+        console.log('theatre:', theatreToShow)
     }
 
      rowCount() {
