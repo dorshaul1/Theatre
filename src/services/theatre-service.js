@@ -1,63 +1,114 @@
 // import {theatre} from '../data/chairs.js'
 
 const gTheatre = [
-
-
-    {
-
-        "_id": "c1",
-        "isChair": true,
-        "status": "available",
-        "pos": {
-            "line": 1,
-            "chairNum": 5
-        },
-        "price": 35
-
+  {
+    _id: 'c1',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 1,
+      chairNum: 1,
     },
-    {
-
-        "_id": "c2",
-        "isChair": true,
-        "status": "reserved",
-        "pos": {
-            "line": 2,
-            "chairNum": 5
-        },
-        "price": 45
-
+    price: 35,
+  },
+  {
+    _id: 'c2',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 1,
+      chairNum: 2,
     },
-    {
-
-        "_id": "c3",
-        "isChair": true,
-        "status": "reserved",
-        "pos": {
-            "line": 3,
-            "chairNum": 5
-        },
-        "price": 45
-
+    price: 35,
+  },
+  {
+    _id: 'c3',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 1,
+      chairNum: 3,
     },
-    {
-
-        "_id": "c4",
-        "isChair": true,
-        "status": "available",
-        "pos": {
-            "line": 3,
-            "chairNum": 5
-        },
-        "price": 35
-
+    price: 35,
+  },
+  {
+    _id: 'c4',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 1,
+      chairNum: 4,
     },
-
+    price: 35,
+  },
+  {
+    _id: 'c5',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 1,
+      chairNum: 5,
+    },
+    price: 35,
+  },
+  {
+    _id: 'c6',
+    isChair: true,
+    status: 'reserved',
+    pos: {
+      line: 2,
+      chairNum: 1,
+    },
+    price: 45,
+  },
+  {
+    _id: 'c7',
+    isChair: true,
+    status: 'reserved',
+    pos: {
+      line: 2,
+      chairNum: 2,
+    },
+    price: 45,
+  },
+  {
+    _id: 'c8',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 2,
+      chairNum: 3,
+    },
+    price: 35,
+  },
+  {
+    _id: 'c9',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 2,
+      chairNum: 4,
+    },
+    price: 35,
+  },
+  {
+    _id: 'c10',
+    isChair: true,
+    status: 'available',
+    pos: {
+      line: 2,
+      chairNum: 5,
+    },
+    price: 35,
+  },
 ]
 
 export const theatreService = {
-    getTheatre
+  getTheatre,
 }
 
 function getTheatre() {
-    return gTheatre
+  return gTheatre
 }
+
+function getTheatres() {}
