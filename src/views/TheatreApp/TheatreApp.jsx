@@ -9,7 +9,7 @@ export class TheatreApp extends Component {
 
     render() {
         return (
-            <div>
+            <div className="theatreApp flex column align-center">
             <h1>Theatre</h1>
             <Theatre />
             <ReservationSummary />
