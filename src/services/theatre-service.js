@@ -117,10 +117,12 @@ function getTheatre() {
     return gTheatre
 }
 
+// createTheater(2, 3 ,2, 12)
+
 function createTheater (rows,columns,middleSection,generalPrice){
-    const middleSit=parseInt(columns.length/2)
-    const passColumn=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
-    const theatre=[]
+    let middleSit=parseInt(columns.length/2)
+    let passColumn=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
+    let theatre=[]
     for (var i=0 ;i<=rows.length;i++){
         for(var j=0;j<=columns.length;j++){
             const chair=createChair(i,j,generalPrice,passColumn)
