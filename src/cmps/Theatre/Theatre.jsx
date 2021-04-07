@@ -30,12 +30,18 @@ export class Theatre extends Component {
         // console.log('maxRowNum:', maxRowNum)
     }
 
+    changeChairStatus(chairId){
+         console.log('chairId:', chairId)
+        // console.log('this.state.theatre:', this.state.theatre)
+        // this.state.theatre.findIndex()
+    }
+
     render() {
         return (
             <div className="theatre flex column">
                 <div className="screen"></div>
 
-                <ChairsList theatre={this.state.theatre} rowsCount={this.state.rows}/>
+                <ChairsList theatre={this.state.theatre} changeChairStatus={this.changeChairStatus} rowsCount={this.state.rows}/>
             </div>
         )
     }

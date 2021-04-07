@@ -4,7 +4,7 @@ import { LinePreview } from '../LinePreview'
 
 import './ChairsList.scss'
 
-export const ChairsList = ({ theatre, rowsCount }) => {
+export const ChairsList = ({ theatre, rowsCount, changeChairStatus }) => {
     // console.log('theatre:', theatre)
 
     const getChairsRow = (row) => {
@@ -29,7 +29,7 @@ export const ChairsList = ({ theatre, rowsCount }) => {
         <div>
             {getLines().map((line, idx) => {
                 // console.log('line:', line)
-                return <LinePreview  key={idx} line={line} />
+                return <LinePreview changeChairStatus={changeChairStatus} key={idx} line={line} />
                 // return line.map((chair) => <>)
                 })}
                 </div>

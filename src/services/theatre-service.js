@@ -19,7 +19,7 @@ const gTheatre = [
 
         "_id": "c2",
         "isChair": true,
-        "status": "reserved",
+        "status": "available",
         "pos": {
             "line": 2,
             "chairNum": 5
