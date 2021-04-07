@@ -14,7 +14,7 @@ export class TheatreApp extends Component {
 
     componentDidMount(){
 
-    theatreService.createTheatre(10,25,18,35)
+    // theatreService.createTheatre(10,25,18,35)
     }
 
     render() {

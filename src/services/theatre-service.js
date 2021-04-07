@@ -1,8 +1,9 @@
 // import {theatre} from '../data/chairs.js'
-import {storageService} from '.async-storage-service.js'
+// import {storageService} from '.async-storage-service.js'
 
 export const theatreService={
-createTheatre
+    createTheater,
+getTheatre
 }
 
 const gTheatre = [
@@ -108,9 +109,9 @@ const gTheatre = [
   },
 ]
 
-export const theatreService = {
-  getTheatre,
-}
+// export const theatreService = {
+//   getTheatre,
+// }
 
 function getTheatre() {
     return gTheatre
