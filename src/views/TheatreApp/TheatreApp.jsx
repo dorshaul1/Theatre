@@ -13,7 +13,8 @@ export class TheatreApp extends Component {
     // }
 
     componentDidMount(){
-        theatreService.createTheatre()
+
+    theatreService.createTheatre(10,25,18,35)
     }
 
     render() {

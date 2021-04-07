@@ -1,6 +1,10 @@
 // import {theatre} from '../data/chairs.js'
 import {storageService} from '.async-storage-service.js'
 
+export const theatreService={
+createTheatre
+}
+
 const gTheatre = [
   {
     _id: 'c1',
