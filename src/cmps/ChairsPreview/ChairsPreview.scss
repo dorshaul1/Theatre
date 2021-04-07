@@ -6,6 +6,10 @@
     border-radius: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+
+    &.pathway{
+        opacity: 1;
+    }
     &.available {
         background-color: rgb(170, 167, 189);
     }

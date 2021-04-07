@@ -14,8 +14,8 @@ export class Theatre extends Component {
 
     async componentDidMount() {
         
-        var theatreToShow = theatreService.createTheatre(6,8,5,35)
-        console.log('theatreToShow:', theatreToShow)
+        var theatreToShow = theatreService.createTheatre(8,12,8,35)
+        // console.log('theatreToShow:', theatreToShow)
         this.setState({ theatre: theatreToShow }, ()=>{
             this.rowCount()
         })

@@ -5,10 +5,33 @@ import './ChairsPreview.scss'
 
 export const ChairsPreview = ({ chair }) => {
 
-    // render() {
-        // console.log('chair.status :', chair )
+    const getChairClass=(chair)=>{
+        var classStr = "flex center chairsPreview "
+        const chairStatus = getChairStatus(chair)
+        classStr+=chairStatus
+        return classStr
+
+    }
+
+    const getChairStatus=(chair)=>{
+        if (chair.isChair) {
+            switch (chair.status) {
+                case "reserved":
+                    return "reserved"
+                case "available":
+                    return "available"
+                case "selected":
+                    return "selected"
+                default:
+                    return "pathway"
+            }
+        } else {
+            return "pathway"
+        }
+    }
+
     return (
-        <div className={(chair.status === 'available') ? "chairsPreview available flex center":"chairsPreview reserved flex center" } >
+        <div className={getChairClass(chair)} >
             {JSON.stringify(chair.pos.chairNum)}
         </div>
     )

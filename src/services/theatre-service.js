@@ -118,13 +118,15 @@ function getTheatre() {
 }
 
 function createTheatre (rows,columns,middleSection,generalPrice){
-    const middleSit=parseInt(columns.length/2)
-    const passColumn=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
+    const middleSit=parseInt(columns/2)
+    console.log(middleSit);
+    const pathway=[middleSit-parseInt(middleSection/2),middleSit+parseInt(middleSection/2)]
+    console.log(pathway);
     const theatre=[]
     for (var i=0 ;i<=rows;i++){
         for (var j=0;j<=columns;j++){
-            const chair=createChair(i,j,generalPrice,passColumn)
-            console.log(chair)
+            const chair=createChair(i,j,generalPrice,pathway)
+            // console.log(chair)
             theatre.push(chair)
         }
     }
@@ -132,8 +134,8 @@ function createTheatre (rows,columns,middleSection,generalPrice){
     return theatre
 }
 
-function createChair(line,chairNum,price,passColumn){
-    if (chairNum!==passColumn[0] && chairNum!==passColumn[1]){ 
+function createChair(line,chairNum,price,pathway){
+    if (chairNum!==pathway[0] && chairNum!==pathway[1]){ 
         return  {
             _id: _makeId(),
             isChair: true,
